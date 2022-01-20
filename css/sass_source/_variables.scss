@@ -1,0 +1,30 @@
+
+
+$x-small: "only screen and (max-width: 570px)";
+$small: "only screen and (max-width: 768px)";
+$medium: "only screen and (max-width: 992px)";
+$x-medium: "only screen and (max-width: 1200px)";
+$large: "only screen and (max-width: 1500px)";
+$x-large: "only screen and (max-width: 1600px)";
+
+
+// Kolory
+$logo:#0086ce;
+$glowny:#00162a;
+$glowny2:#f7941d;
+$glowny3: rgba(0,42,82, 0.7);
+$glowny4:#002a52;
+$szary-light:#d7d7d7;
+$szary:#60605e;
+$bialy: #FFF;
+
+
+    //  @media #{$x-medium} {
+    //         padding: 0px 0px;
+    //     }
+    //  @media #{$medium} {
+    //         padding: 0px 0px;
+    //     }
+    // @media #{$small} {
+    //         padding: 0px 0px;
+    //     }   

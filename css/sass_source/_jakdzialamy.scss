@@ -1,0 +1,60 @@
+#Jak-dzialamy{
+    background: url(../img/bg-line.png);
+	background-position:bottom;
+	background-repeat: no-repeat;
+	background-color:#f4f4f4;
+	min-height: 600px;
+    padding: 150px 100px ;
+    outline: none;
+	@media #{$x-large} {
+        padding: 120px 50px ;
+        } 
+    @media #{$x-medium} {
+        padding: 110px 0px ;
+        }   
+    @media #{$small} {
+    	padding: 50px 0 0;
+    	height: inherit;
+    }
+   .title-section{
+         @media #{$small} {
+           text-align: center;
+       }
+    }
+
+    h3{
+    	color:#cdb17c;
+    	font-weight: 700;
+    	font-size: 28px;
+        @media #{$x-medium} {
+        font-size: 21px;
+        }
+    }
+    p{
+    	color:#585858;
+    	font-size: 18px;
+    	font-weight: 300;
+         @media #{$x-medium} {
+        font-size: 16px;
+        }
+    }
+    img{
+    	position: relative;
+    	z-index: 1;
+    }
+}
+.proces{
+    position: relative;
+    top: -400px;
+    z-index: 0;
+    @media #{$x-large} {
+        top:-400px;
+    }
+    @media #{$x-medium} {
+       top:-350px;
+        }
+    @media #{$medium} {
+       display:none;
+        }       
+}
+

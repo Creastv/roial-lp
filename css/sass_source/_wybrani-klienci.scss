@@ -1,0 +1,73 @@
+.klienci{
+  background-color: #fff;
+  overflow: hidden;
+  min-height: 600px;
+  padding: 100px 100px;
+  outline: none;
+  @media #{$x-large} {
+    padding: 120px 50px;
+  }
+  @media #{$x-medium} {
+    padding: 110px 0px;
+  }
+  @media #{$medium} {
+    margin-top: 0px;
+  }
+  @media #{$small} {
+    padding: 50px 0 100px;
+    background-position: center bottom;
+    background-size: 160%;
+    // height: inherit;
+  }
+  .title-section{
+      text-align: center;
+      margin-bottom: 50px;
+       @media #{$small} {
+           text-align: center;
+       }
+      span{
+          width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);  
+      }
+      p{
+          font-size: 24px!important;
+          max-width: 1000px;
+          margin: 0 auto;
+           @media #{$small} {
+               font-size: 16px!important;
+           }
+      }
+
+  }
+  .logos{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      a{
+          width: 20%;
+          text-align: center;
+          padding: 15px;
+          @media #{$medium} {
+              width: 33.33%;
+          }
+          &:hover{
+             img{
+                filter: grayscale(0%);
+                -webkit-filter: grayscale(0%);
+                transform: translateY(-10px);
+                opacity: 1;
+             }
+          }
+          img{
+              max-width: 100%;
+              height: auto;
+               filter: grayscale(100%);
+               -webkit-filter: grayscale(100%);
+               transition: all .3s;
+               opacity: 0.6;
+          }
+      }
+  }
+}

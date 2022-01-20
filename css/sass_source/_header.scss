@@ -1,0 +1,186 @@
+#fixed-element {
+  position: absolute;
+  z-index: 2000000;
+  left: 0px;
+  top: 0px;
+  .logo {
+    width: 270px;
+    background: #fff;
+    padding: 30px;
+    z-index: 3010;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    @media #{$medium} {
+      width: 139px;
+      // background: #fff;
+      padding: 45px 18px;
+    }
+    @media #{$small} {
+      padding: 4px 18px;
+    }
+    img {
+    }
+  }
+  .dopisek {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+35,f4f4f4+100 */
+    background: #fff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4f4f4+0,ffffff+100 */
+    background: #f4f4f4; /* Old browsers */
+    background: -moz-linear-gradient(
+      left,
+      #f4f4f4 0%,
+      #ffffff 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #f4f4f4 0%,
+      #ffffff 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to right,
+      #f4f4f4 0%,
+      #ffffff 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    left: -262px;
+    width: 613px;
+    height: 103px;
+    position: absolute;
+    z-index: 3000;
+    top: 392px;
+    // background: #fff;
+    text-align: center;
+    @media #{$medium} {
+      left: -325px;
+      width: 657px;
+      height: 29px;
+      top: 408px;
+    }
+    @media #{$small} {
+      left: -396px;
+      width: 800px;
+      height: 29px;
+      top: 377px;
+    }
+    &:before {
+      content: "";
+      width: 130px;
+      height: 1px;
+      background: #a5a1a1;
+      display: block;
+      position: relative;
+      left: 0px;
+      top: 53px;
+      @media #{$medium} {
+        content: "";
+        width: 211px;
+        top: 18px;
+      }
+    }
+    span {
+      display: block;
+      margin-top: 40px;
+      color: #a5a1a1;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 18px;
+      @media #{$medium} {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.navbar-inverse {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none !important;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  @media #{$small} {
+    background-color: rgba(88, 88, 88, 0.9);
+  }
+  .kon {
+    float: right;
+    border-bottom: 1px solid #fff;
+    @media #{$small} {
+      margin-left: 15px;
+    }
+
+    span {
+      color: #fff;
+      font-weight: 300;
+      font-size: 21px;
+      // font-size: 2.5vw;
+      @media #{$medium} {
+        font-size: 18px;
+      }
+
+      a {
+        font-size: 26px;
+        font-weight: 700;
+        color: #ba9b61 !important;
+        margin-left: 10px;
+        @media #{$medium} {
+          font-size: 20px;
+        }
+        &:hover {
+          text-decoration: none;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  ul {
+    clear: both;
+    .active {
+      a {
+        background: none !important;
+        border-bottom: 5px solid #ba9b61;
+      }
+    }
+    li {
+      a {
+        font-size: 21px;
+        font-weight: 700;
+        border-bottom: 5px solid rgba(0, 0, 0, 0);
+        color: #fff !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+
+.affix {
+  background-color: rgba(88, 88, 88, 0.9);
+}
+#fixed-element .affix {
+  padding: 5px 30px !important;
+  @media #{$medium} {
+    width: 139px;
+    // background: #fff;
+    padding: 21px 18px !important;
+  }
+  @media #{$small} {
+    padding: 4px 18px !important;
+  }
+}
+#fixed-element .dopisek.affix {
+  // padding: 2px 30px!important;
+  // left: -360px;
+  left: -410px;
+  width: 705px;
+}

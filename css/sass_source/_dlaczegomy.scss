@@ -1,0 +1,109 @@
+#Dlaczego-my {
+  background-image: url(../img/bg-why.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  // background-size: contain;
+  background-color: #fff;
+  overflow: hidden;
+  min-height: 600px;
+  padding: 150px 100px;
+  outline: none;
+  margin-top: -125px;
+  @media #{$x-large} {
+    padding: 120px 50px;
+  }
+  @media #{$x-medium} {
+    padding: 110px 0px;
+  }
+  @media #{$medium} {
+    margin-top: 0px;
+  }
+  @media #{$small} {
+    padding: 50px 0 100px;
+    background-position: center bottom;
+    background-size: 160%;
+    // height: inherit;
+  }
+  .clear {
+    height: 50px;
+    display: block;
+    clear: both;
+    @media #{$small} {
+      display: none;
+    }
+  }
+  .zdj {
+    background-image: url(../img/img-why.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 600px;
+    @media #{$x-large} {
+      width: 500px;
+      height: 400px;
+    }
+    @media #{$x-medium} {
+      margin-left: 30px;
+    }
+    @media #{$small} {
+      margin-top: 0px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 700px;
+      height: 600px;
+      border: 1px solid #ba9b61;
+      left: -20px;
+      top: 10px;
+      @media #{$x-large} {
+        width: 500px;
+        height: 400px;
+      }
+      @media #{$x-medium} {
+        left: 15px;
+      }
+      @media #{$small} {
+        width: 500px;
+        height: 350px;
+      }
+    }
+  }
+  .box {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+    padding: 50px;
+    margin-left: -100px;
+    margin-top: 100px;
+    @media #{$x-large} {
+      margin-top: 80px;
+     padding: 50px 20px 20px 0;
+    }
+    @media #{$small} {
+      margin-left: 0px;
+      margin-top: -60px;
+    }
+    ul {
+      list-style-image: url(../img/tick-why.png);
+      padding-left: 60px;
+      @media #{$small} {
+        padding-left: 35px;
+      }
+      li {
+        margin-bottom: 20px;
+        span{
+          font-size: 16px;
+          a{
+            color:#ba9b61 !important;
+            font-weight: bold;
+          }
+        }
+  
+      }
+    }
+  }
+}
