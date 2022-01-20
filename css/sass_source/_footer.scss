@@ -1,111 +1,119 @@
-#footer{
-    background-image: url(../img/bg-footer.png);
-	background-position:left center;
-	background-repeat: no-repeat;
-	padding: 50px;
-	background-color: #464646;
+#footer {
+  background-image: url(../img/bg-footer.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  background-color: #464646;
 
-	padding: 50px 100px ;
+  padding: 50px 100px;
+  outline: none;
+  @media #{$x-large} {
+    padding: 50px 50px;
+  }
+  @media #{$x-medium} {
+    padding: 50px 0px;
+  }
+  @media #{$small} {
+    padding: 50px 0;
+    height: inherit;
+  }
+  h3 {
+    color: #fff;
+    font-size: 31px;
+  }
+  p {
+    color: #fff;
+  }
+  .logo-f {
+    width: 110px;
+    margin-bottom: -16px;
+    margin-top: 25px;
+  }
+  .osoba-kontaktowa {
+    h3 {
+    }
+    .stanowisko {
+      background: #ba9b61;
+      display: inline-block;
+      font-size: 25px;
+      color: #fff;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+    }
+    a {
+      color: #fff;
+      display: block;
+      font-size: 21px;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+      }
+    }
+  }
+  .btn-f {
+    width: 100% !important;
+    color: #fff !important;
+    border-radius: 30px !important;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e22a27+49,c22724+51 */
+    background: #e22a27; /* Old browsers */
+    background: -moz-linear-gradient(
+      top,
+      #e22a27 49%,
+      #c22724 51%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      #e22a27 49%,
+      #c22724 51%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #e22a27 49%,
+      #c22724 51%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e22a27', endColorstr='#c22724',GradientType=0 ); /* IE6-9 */
+    border: none !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 10px 0px;
     outline: none;
-	@media #{$x-large} {
-        padding: 50px 50px ;
-        } 
-    @media #{$x-medium} {
-        padding: 50px 0px ;
-        }   
-    @media #{$small} {
-    	padding: 50px 0;
-    	height: inherit;
+    margin-bottom: 30px;
+    @media #{$large} {
+      font-size: 23px;
+      margin-bottom: 12px;
     }
-    h3{
-    	color:#fff;
-    	font-size: 31px;
+    @media #{$medium} {
+      font-size: 19px;
+      // margin-bottom: -20px;
+      // margin-top: 12px;
     }
-    p{
-    	color:#fff;
-    }
-    .logo-f{
-    	width: 110px;
-	    margin-bottom: -16px;
-	    margin-top: 25px;
-    }
-    .osoba-kontaktowa{
-    	h3{
-
-    	}
-    	.stanowisko{
-    		background: #ba9b61;
-    		display: inline-block;
-    		font-size: 25px;
-    		color:#fff;
-    		padding: 5px 10px;
-    		margin-bottom: 10px;
-    	}
-    	a{
-    		color:#fff;
-    		display:block;
-    		font-size: 21px;
-    		&:hover{
-    			text-decoration: none;
-    			opacity: 0.8;
-    		}
-    	}
-    }
-    .btn-f{
-			width: 100%!important;
-			color:#fff!important;
-			border-radius: 30px!important;
-			-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.35);
-			-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.35);
-			box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.35);
-			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e22a27+49,c22724+51 */
-			background: #e22a27; /* Old browsers */
-			background: -moz-linear-gradient(top, #e22a27 49%, #c22724 51%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top, #e22a27 49%,#c22724 51%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom, #e22a27 49%,#c22724 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e22a27', endColorstr='#c22724',GradientType=0 ); /* IE6-9 */
-			border:none!important;
-			text-transform: uppercase;
-			font-weight: 700;
-			font-size: 28px;
-			padding: 10px 0px;
-			outline: none;
-			margin-bottom: 30px;
-			@media #{$large} {
-				    font-size: 23px;
-				    margin-bottom: 12px;
-			}
-			@media #{$medium} {
-				font-size: 19px;
-                // margin-bottom: -20px;
-                // margin-top: 12px;
-			}
-
-		}
-
+  }
 }
-#info{
-	position: relative;
-	p{
-		position: relative;
-		z-index: 100;
-		font-size: 14px;
-		background: #fff;
-		display: inline-block;
-		text-align: right;
-		float: right;
-		padding: 10px;
-		@media #{$small} {
-			float: none;
-			text-align: center;
-		}
-	}
-	.hr{
-		width: 100%;
-		height: 1px;
-		background: #464646;
-		position: absolute;
-		top: 20px;
-
-	}
+#info {
+  position: relative;
+  p {
+    position: relative;
+    z-index: 100;
+    font-size: 14px;
+    background: #fff;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    padding: 10px;
+    @media #{$small} {
+      float: none;
+      text-align: center;
+    }
+  }
+  .hr {
+    width: 100%;
+    height: 1px;
+    background: #464646;
+    position: absolute;
+    top: 20px;
+  }
 }

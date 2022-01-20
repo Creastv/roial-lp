@@ -1,37 +1,36 @@
-body{
-
+body {
 }
 
-.title-section{
-	    position: relative;
-	h2{
-		font-size: 34px;
-		font-weight: 600;
-		color:#585858;
-		letter-spacing: 6px;
-	}
-	span{
-		font-size: 77px;
-		font-weight: 600;
-		color:#585858;
-		opacity: 0.1;
-		position: absolute;
-        top: -51px;
-        letter-spacing: 6px;
-        @media #{$small} {
-        	display:none;
-        }
-	}
+.title-section {
+  position: relative;
+  h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #585858;
+    letter-spacing: 6px;
+  }
+  span {
+    font-size: 77px;
+    font-weight: 600;
+    color: #585858;
+    opacity: 0.1;
+    position: absolute;
+    top: -51px;
+    letter-spacing: 6px;
+    @media #{$small} {
+      display: none;
+    }
+  }
 }
 
-.hide-p{
-	opacity: 0;
+.hide-p {
+  opacity: 0;
 }
-.show-p{
-	opacity:1!important;
+.show-p {
+  opacity: 1 !important;
 }
 
-.ornament{
-	width: 100%;
-	overflow: hidden;
+.ornament {
+  width: 100%;
+  overflow: hidden;
 }
