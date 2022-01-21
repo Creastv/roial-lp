@@ -159,6 +159,9 @@
         border-bottom: 5px solid rgba(0, 0, 0, 0);
         color: #fff !important;
         opacity: 1 !important;
+         @media #{$large} {
+           font-size: 18px;
+         }
       }
     }
   }

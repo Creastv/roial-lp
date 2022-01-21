@@ -51,7 +51,6 @@
     }
   }
   .btn-f {
-    width: 100% !important;
     color: #fff !important;
     border-radius: 30px !important;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
@@ -78,8 +77,8 @@
     border: none !important;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 28px;
-    padding: 10px 0px;
+    font-size: 18px;
+    padding: 10px 20px;
     outline: none;
     margin-bottom: 30px;
     @media #{$large} {
@@ -95,19 +94,24 @@
 }
 #info {
   position: relative;
-  p {
+  .links{
+    float: left;
+  }
+  .inf p, .links a {
     position: relative;
     z-index: 100;
     font-size: 14px;
     background: #fff;
     display: inline-block;
-    text-align: right;
-    float: right;
+    // float: right;
+    color:#60605e;
     padding: 10px;
     @media #{$small} {
-      float: none;
       text-align: center;
     }
+  }
+  .inf{
+    text-align: right;
   }
   .hr {
     width: 100%;

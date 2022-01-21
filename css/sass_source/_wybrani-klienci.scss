@@ -2,19 +2,20 @@
   background-color: #fff;
   overflow: hidden;
   min-height: 600px;
-  padding: 100px 100px;
+  padding: 50px 100px 0px;
   outline: none;
   @media #{$x-large} {
-    padding: 120px 50px;
+    padding: 50px 0px 0px;
   }
   @media #{$x-medium} {
-    padding: 110px 0px;
+    padding: 50px 50px 110px 0px;
   }
   @media #{$medium} {
     margin-top: 0px;
+    padding: 50px 0 0px;
   }
   @media #{$small} {
-    padding: 50px 0 100px;
+    padding: 50px 0 0;
     background-position: center bottom;
     background-size: 160%;
     // height: inherit;

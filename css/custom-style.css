@@ -2,6 +2,12 @@
   position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+  .title-section {
+    text-align: center;
+  }
+}
+
 .title-section h2 {
   font-size: 34px;
   font-weight: 600;
@@ -36,6 +42,23 @@
 .ornament {
   width: 100%;
   overflow: hidden;
+}
+
+.co-robimy, .jak-dzialamy, .dlaczego-my, .klienci, .casestudy {
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  top: -100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .anchor {
+    top: 0;
+  }
 }
 
 body {
@@ -241,6 +264,12 @@ p {
   opacity: 1 !important;
 }
 
+@media only screen and (max-width: 1500px) {
+  .navbar-inverse ul li a {
+    font-size: 18px;
+  }
+}
+
 .affix {
   background-color: rgba(88, 88, 88, 0.9);
 }
@@ -332,7 +361,6 @@ p {
 }
 
 #footer .btn-f {
-  width: 100% !important;
   color: #fff !important;
   border-radius: 30px !important;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
@@ -350,8 +378,8 @@ p {
   border: none !important;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 28px;
-  padding: 10px 0px;
+  font-size: 18px;
+  padding: 10px 20px;
   outline: none;
   margin-bottom: 30px;
 }
@@ -373,22 +401,28 @@ p {
   position: relative;
 }
 
-#info p {
+#info .links {
+  float: left;
+}
+
+#info .inf p, #info .links a {
   position: relative;
   z-index: 100;
   font-size: 14px;
   background: #fff;
   display: inline-block;
-  text-align: right;
-  float: right;
+  color: #60605e;
   padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-  #info p {
-    float: none;
+  #info .inf p, #info .links a {
     text-align: center;
   }
+}
+
+#info .inf {
+  text-align: right;
 }
 
 #info .hr {
@@ -950,66 +984,66 @@ label {
   }
 }
 
-#Jak-dzialamy {
+.jak-dzialamy {
   background: url(../img/bg-line.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-color: #f4f4f4;
   min-height: 600px;
-  padding: 150px 100px;
+  padding: 50px 150px 100px;
   outline: none;
 }
 
 @media only screen and (max-width: 1600px) {
-  #Jak-dzialamy {
-    padding: 120px 50px;
+  .jak-dzialamy {
+    padding: 50px 50px 120px 50px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  #Jak-dzialamy {
-    padding: 110px 0px;
+  .jak-dzialamy {
+    padding: 50px 50px 110px 0px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #Jak-dzialamy {
+  .jak-dzialamy {
     padding: 50px 0 0;
     height: inherit;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #Jak-dzialamy .title-section {
+  .jak-dzialamy .title-section {
     text-align: center;
   }
 }
 
-#Jak-dzialamy h3 {
+.jak-dzialamy h3 {
   color: #cdb17c;
   font-weight: 700;
   font-size: 28px;
 }
 
 @media only screen and (max-width: 1200px) {
-  #Jak-dzialamy h3 {
+  .jak-dzialamy h3 {
     font-size: 21px;
   }
 }
 
-#Jak-dzialamy p {
+.jak-dzialamy p {
   color: #585858;
   font-size: 18px;
   font-weight: 300;
 }
 
 @media only screen and (max-width: 1200px) {
-  #Jak-dzialamy p {
+  .jak-dzialamy p {
     font-size: 16px;
   }
 }
 
-#Jak-dzialamy img {
+.jak-dzialamy img {
   position: relative;
   z-index: 1;
 }
@@ -1038,57 +1072,55 @@ label {
   }
 }
 
-#Dlaczego-my {
+.dlaczego-my {
   background-image: url(../img/bg-why.png);
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-color: #fff;
   overflow: hidden;
   min-height: 600px;
-  padding: 150px 100px;
+  padding: 100px 100px;
   outline: none;
   margin-top: -125px;
 }
 
 @media only screen and (max-width: 1600px) {
-  #Dlaczego-my {
-    padding: 120px 50px;
+  .dlaczego-my {
+    padding: 50px 50px 120px 50px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  #Dlaczego-my {
-    padding: 110px 0px;
+  .dlaczego-my {
+    padding: 50px 50px 110px 0px;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  #Dlaczego-my {
+  .dlaczego-my {
     margin-top: 0px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #Dlaczego-my {
+  .dlaczego-my {
     padding: 50px 0 100px;
     background-position: center bottom;
     background-size: 160%;
   }
 }
 
-#Dlaczego-my .clear {
-  height: 50px;
+.dlaczego-my .clear {
   display: block;
   clear: both;
 }
 
 @media only screen and (max-width: 768px) {
-  #Dlaczego-my .clear {
+  .dlaczego-my .clear {
     display: none;
   }
 }
 
-#Dlaczego-my .zdj {
+.dlaczego-my .zdj {
   background-image: url(../img/img-why.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -1098,25 +1130,25 @@ label {
 }
 
 @media only screen and (max-width: 1600px) {
-  #Dlaczego-my .zdj {
+  .dlaczego-my .zdj {
     width: 500px;
     height: 400px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  #Dlaczego-my .zdj {
+  .dlaczego-my .zdj {
     margin-left: 30px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #Dlaczego-my .zdj {
+  .dlaczego-my .zdj {
     margin-top: 0px;
   }
 }
 
-#Dlaczego-my .zdj:before {
+.dlaczego-my .zdj:before {
   content: "";
   display: block;
   position: absolute;
@@ -1128,26 +1160,26 @@ label {
 }
 
 @media only screen and (max-width: 1600px) {
-  #Dlaczego-my .zdj:before {
+  .dlaczego-my .zdj:before {
     width: 500px;
     height: 400px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  #Dlaczego-my .zdj:before {
+  .dlaczego-my .zdj:before {
     left: 15px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #Dlaczego-my .zdj:before {
+  .dlaczego-my .zdj:before {
     width: 500px;
     height: 350px;
   }
 }
 
-#Dlaczego-my .box {
+.dlaczego-my .box {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
@@ -1157,39 +1189,39 @@ label {
 }
 
 @media only screen and (max-width: 1600px) {
-  #Dlaczego-my .box {
+  .dlaczego-my .box {
     margin-top: 80px;
     padding: 50px 20px 20px 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #Dlaczego-my .box {
+  .dlaczego-my .box {
     margin-left: 0px;
     margin-top: -60px;
   }
 }
 
-#Dlaczego-my .box ul {
+.dlaczego-my .box ul {
   list-style-image: url(../img/tick-why.png);
   padding-left: 60px;
 }
 
 @media only screen and (max-width: 768px) {
-  #Dlaczego-my .box ul {
+  .dlaczego-my .box ul {
     padding-left: 35px;
   }
 }
 
-#Dlaczego-my .box ul li {
+.dlaczego-my .box ul li {
   margin-bottom: 20px;
 }
 
-#Dlaczego-my .box ul li span {
+.dlaczego-my .box ul li span {
   font-size: 16px;
 }
 
-#Dlaczego-my .box ul li span a {
+.dlaczego-my .box ul li span a {
   color: #ba9b61 !important;
   font-weight: bold;
 }
@@ -1313,31 +1345,32 @@ label {
   background-color: #fff;
   overflow: hidden;
   min-height: 600px;
-  padding: 100px 100px;
+  padding: 50px 100px 0px;
   outline: none;
 }
 
 @media only screen and (max-width: 1600px) {
   .klienci {
-    padding: 120px 50px;
+    padding: 50px 0px 0px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .klienci {
-    padding: 110px 0px;
+    padding: 50px 50px 110px 0px;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .klienci {
     margin-top: 0px;
+    padding: 50px 0 0px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .klienci {
-    padding: 50px 0 100px;
+    padding: 50px 0 0;
     background-position: center bottom;
     background-size: 160%;
   }
@@ -1418,29 +1451,29 @@ label {
 }
 
 .co-robimy {
-  background-color: #fff;
   overflow: hidden;
   min-height: 600px;
-  padding: 100px 100px;
+  padding: 50px 100px 100px;
   outline: none;
   margin-top: -125px;
 }
 
 @media only screen and (max-width: 1600px) {
   .co-robimy {
-    padding: 120px 50px;
+    padding: 50px 50px 120px 50px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .co-robimy {
-    padding: 110px 0px;
+    padding: 50px 50px 110px 0px;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .co-robimy {
     margin-top: 0px;
+    padding: 0px;
   }
 }
 
@@ -1529,13 +1562,13 @@ label {
 
 @media only screen and (max-width: 1600px) {
   .casestudy {
-    padding: 120px 50px;
+    padding: 50px 50px 120px 50px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .casestudy {
-    padding: 110px 0px;
+    padding: 50px 50px 110px 0px;
   }
 }
 
@@ -1598,6 +1631,7 @@ label {
 
 .tab-content .title img {
   max-width: 110px;
+  padding: 5px;
 }
 
 .tab-content ul li {

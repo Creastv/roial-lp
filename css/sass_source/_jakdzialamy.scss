@@ -1,16 +1,16 @@
-#Jak-dzialamy {
+.jak-dzialamy {
   background: url(../img/bg-line.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-color: #f4f4f4;
   min-height: 600px;
-  padding: 150px 100px;
+  padding: 50px 150px 100px;
   outline: none;
   @media #{$x-large} {
-    padding: 120px 50px;
+    padding: 50px 50px 120px 50px;
   }
   @media #{$x-medium} {
-    padding: 110px 0px;
+    padding: 50px 50px 110px 0px;
   }
   @media #{$small} {
     padding: 50px 0 0;

@@ -3,6 +3,9 @@ body {
 
 .title-section {
   position: relative;
+  @media #{$small} {
+    text-align: center;
+  }
   h2 {
     font-size: 34px;
     font-weight: 600;
@@ -33,4 +36,16 @@ body {
 .ornament {
   width: 100%;
   overflow: hidden;
+}
+.co-robimy, .jak-dzialamy, .dlaczego-my, .klienci, .casestudy{
+  position: relative;
+}
+.anchor{
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  top: -100px;
+      @media #{$small} {
+        top: 0;
+      }
 }

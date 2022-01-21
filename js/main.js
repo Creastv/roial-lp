@@ -132,72 +132,10 @@ $('a[href*="#"]')
     }
   });
 
-  jQuery(document).ready(function($) {
-       $('.navbar-collapse a').click(function (e) {
-        $('.navbar-collapse').collapse('toggle');
-      });
-  });
-
-
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
-
-// Viewchecker
-         $(document).ready(function() {
-          $('.r').addClass("hide-p").viewportChecker({
-                classToAdd: 'show-p animated fadeInRight', // Class to add to the elements when they are visible
-                offset: 200 ,   
-               });   
-          }); 
-
-          // $(document).ready(function() {
-          // $('.proces').addClass("hide-p").viewportChecker({
-          //       classToAdd: 'show-p animated fadeInLeft', // Class to add to the elements when they are visible
-          //       offset: 200 ,   
-          //      });   
-          // });  
-          //  $(document).ready(function() {
-          // $('.u').addClass("hide-p").viewportChecker({
-          //       classToAdd: 'show-p animated fadeInDown', // Class to add to the elements when they are visible
-          //       offset: 200 ,   
-          //      });   
-          // });  
-          //   $(document).ready(function() {
-          // $('#Dlaczego-my').addClass("hide-p").viewportChecker({
-          //       classToAdd: 'show-p animated fadeInRight', // Class to add to the elements when they are visible
-          //       offset: 200 ,   
-          //      });   
-          // });  
-
-          // $(document).ready(function() {
-          // $('.j').addClass("hide-p").viewportChecker({
-          //       classToAdd: 'show-p animated fadeInDown', // Class to add to the elements when they are visible
-          //       offset: 200 ,   
-          //      });   
-          // }); 
-          // $(document).ready(function() {
-          // $('footer').addClass("hide-p").viewportChecker({
-          //       classToAdd: 'show-p animated fadeInDown', // Class to add to the elements when they are visible
-          //       offset: 200 ,   
-          //      });   
-          // });  
-
-
-
-            jQuery(document).ready(function($) {
-              $('.cs').owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 10,
-                  pagination : false,
-                stopOnHover : false,
-                autoplay: 9000,//Set AutoPlay to 3 seconds
-                 nav: true,
-                 navText: ["<",">"],
-                 animateOut: 'fadeOutLeft',
-                 animateIn: 'fadeIn',
-                 });
+    $(document).ready(function(){
+        if(window.matchMedia("(max-width: 767px)").matches){
+            $('.navbar-collapse a').click(function (e) {
+                $('.navbar-collapse').collapse('toggle');
             });
-
-               
+        }
+    });
