@@ -786,12 +786,26 @@ p {
   top: 5px;
 }
 
+@media only screen and (max-width: 1300px) {
+  #wraper-form form .has-success .form-control-feedback {
+    top: 0;
+    right: 14px;
+  }
+}
+
 #wraper-form form .has-error .form-control-feedback {
   color: #fff;
   right: 19px;
   background: red;
   border-radius: 30px;
   top: 5px;
+}
+
+@media only screen and (max-width: 1300px) {
+  #wraper-form form .has-error .form-control-feedback {
+    top: 0;
+    right: 14px;
+  }
 }
 
 .zgoda + .tooltip > {

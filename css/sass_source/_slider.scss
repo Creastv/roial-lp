@@ -258,6 +258,10 @@
       background: green;
       border-radius: 30px;
       top: 5px;
+      @media #{$l-medium} {
+        top: 0;
+        right: 14px;
+      }
     }
     .has-error .form-control-feedback {
       color: #fff;
@@ -265,6 +269,10 @@
       background: red;
       border-radius: 30px;
       top: 5px;
+      @media #{$l-medium} {
+        top: 0;
+        right: 14px;
+      }
     }
   }
 }
